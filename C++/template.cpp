@@ -50,6 +50,18 @@ bool chmin(T &a, const T& b){
     return false;
 }
 
+// NのK乗をMで割った余り
+ll power(ll N, ll K, ll M){
+    if(K==0)return 1;
+    else if(K%2==1){
+        return power(N, K-1, M)*N%M;
+    }
+    else{
+        ll T=power(N, K/2, M);
+        return T*T%M;
+    }
+}
+
 int main(){
     ios::sync_with_stdio(false);
     cin.tie(nullptr);
