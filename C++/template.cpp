@@ -18,7 +18,7 @@ using Graph = vector<vector<int>>;
 #define _GLIBCXX_DEBUG
 #define endl "\n"
 #define rep(i, n) for (int i = 0; i < (int)(n); i++)
-#define ALL(f,c,... ) (([&](decltype((c)) cccc) { return (f)(std::begin(cccc), std::end(cccc), ## __VA_ARGS__); })(c))
+#define ALL(f,x,...) ([&](decltype((x)) whole) { return (f)(begin(whole), end(whole), ## __VA_ARGS__); })(x)
 const int INF = 1e9;
 const int MININF = -1e9;
 const ll LINF = 1e18;
