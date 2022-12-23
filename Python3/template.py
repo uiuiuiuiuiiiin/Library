@@ -25,3 +25,12 @@ def mapfloat(): return map(float,input().split())
 def listint(): return list(map(int,input().split()))
 def listfloat(): return list(map(float,input().split()))
 
+# NのK乗をMで割った余り
+def power(N, K, M):
+    if K == 0: return 1
+    else:
+        if K % 2 == 1:
+            return power(N, K-1, M) * N % M
+        else:
+            T = power(N, K/2, M)
+            return T * T % M
