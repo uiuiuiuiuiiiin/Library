@@ -1,17 +1,19 @@
-from decimal import Decimal
+from decimal import Decimal     # 小数精度
 import sys
 import bisect       # 二分探索
 import numpy as np  # 色々
-import queue
-import math
-import copy
+import queue    # キュー
+import math     # 数学色々
+import copy     # 配列コピー
 import heapq    # priキュー
+import string   # 英数字呼ぶ
 from itertools import product   # bit全
 from collections import deque   # deque
 from collections import defaultdict     # C++でいうmap
 from functools import lru_cache # メモ化再帰
 MOD = int(1e9+7)
 INF = 1<<60
+MININF = -int(1e18)
 PI = math.pi
 sys.setrecursionlimit(10**9)       # 再帰上限
 
@@ -34,3 +36,4 @@ def power(N, K, M):
         else:
             T = power(N, K/2, M)
             return T * T % M
+
