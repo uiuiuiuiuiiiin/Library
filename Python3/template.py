@@ -13,7 +13,7 @@ from collections import defaultdict     # C++でいうmap
 from functools import lru_cache # メモ化再帰
 MOD = int(1e9+7)
 INF = 1<<60
-MININF = -int(1e18)
+MININF = -int(1<<60)
 PI = math.pi
 sys.setrecursionlimit(10**9)       # 再帰上限
 
