@@ -15,7 +15,7 @@ MOD = int(1e9+7)
 INF = 1<<60
 MININF = -int(1<<60)
 PI = math.pi
-sys.setrecursionlimit(10**9)       # 再帰上限
+sys.setrecursionlimit(10**6)       # 再帰上限
 
 #d=deque()  #deque Objects
 #q=queue.Queue()    #queue Objects
