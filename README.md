@@ -5,13 +5,16 @@
 C++とPythonに対応しています。
 
 ## C++
-**数学**
+**math**
 - 素数判定
 - 約数列挙
 - エラトステネスの篩
 - GCD, LCM
 
-**データ構造**
+**data structure**
+
+**Graph**
+- grid_bfs
 
 ## Python
 **数学**
